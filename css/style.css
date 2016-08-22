@@ -97,19 +97,23 @@ a.navLink:visited{
 /******************Dropdown******************/
 #header ul li:hover ul{
   display:block;
+  margin-left: 313px;
 
 }
 #header ul ul{
   display:none;
   position: absolute;
   background-color: white;
+  margin-top: -6px;
 }
 #header ul ul li{
   display: block;
+  margin-bottom: -20px;
 }
 #header ul ul li a:link{
   color: #313131;
   text-decoration: none;
+  font-size: 20px;
 }
 #header ul ul li a:hover{
   background-color: #c4c4c4;
