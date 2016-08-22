@@ -107,7 +107,7 @@ form{
 }
 form ul{
   list-style-type: none;
-  margin-top: 200px;
+  margin-top: 187px;
 }
 form ul li{
   margin: 15px;
@@ -123,12 +123,13 @@ form input{
   margin-left: 50px;
   background-color: #555555;
   color: white;
-  width: 385px;
+  width: 384px;
+  height: 50px;
 }
 form textarea{
   margin-left: 20px;
   background-color: #555555;
-  width: 385px;
+  width: 384px;
   color: white;
 }
 #submitButton{
@@ -139,6 +140,7 @@ form textarea{
   margin: 0;
   color: gray;
   width: auto;
+  height: auto;
 }
 #contactPencil{
   margin-left: 118px;
