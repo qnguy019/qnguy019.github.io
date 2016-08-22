@@ -94,7 +94,27 @@ a.navLink:visited{
   padding: 36px;
 }
 
+/******************Dropdown******************/
+#header ul li:hover ul{
+  display:block;
 
+}
+#header ul ul{
+  display:none;
+  position: absolute;
+  background-color: white;
+}
+#header ul ul li{
+  display: block;
+}
+#header ul ul li a:link{
+  color: #313131;
+  text-decoration: none;
+}
+#header ul ul li a:hover{
+  background-color: #c4c4c4;
+
+}
 /******************Contact Page******************/
 
 #form_wrap{
