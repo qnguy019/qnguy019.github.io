@@ -93,6 +93,71 @@ a.navLink:visited{
   text-align: center;
   padding: 36px;
 }
+/******************RESUME******************/
+#ManilaFolders{
+  padding: 30px;
+}
+#firstManila{
+  background-color: red;
+  margin-top: 100px;
+}
+.btn{
+  margin-top: 10px;
+  margin-left: 60px;
+  display: block;
+  text-align: center;
+  font-family: DK Bocadillo Regular, Roboto Condensed, Arial, sans-serif;;
+  font-size: 34px;
+  color: #c73b3a;
+  line-height: normal;
+  position: absolute;
+  z-index: 5;
+}
+.btn:hover {
+    background-color: #e9c886;
+}
+#btnControl:checked ~ #MFront {
+  -webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  z-index: 2;
+}
+#btnControl:checked ~ #MPage{
+  z-index: 3;
+  height: 900px;
+}
+#MFront{
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#MPage{
+  position: absolute;
+  z-index: 2;
+  margin: auto;
+  margin-top: 58px;
+  margin-left: 40px;
+  width: 852px;
+  height: 100px;
+  background-color: white;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease;
+}
+#MBack{
+  position: absolute;
+  z-index: 1;
+}
+#btnControl{
+  display: none;
+}
+
 
 /******************Dropdown******************/
 #header ul li:hover ul{
