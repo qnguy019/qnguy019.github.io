@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/960.css" type="text/css">
   <link rel="stylesheet" href="css/text.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
-  <script type="text/javascript">
-  </script>
+  <script type="text/javascript" src="javascript/enlargePicture.js"></script>
 
 </head>
 
@@ -35,5 +34,14 @@
       </ul>
     </div> <!--end header-->
   </div> <!--end container-->
+<div id="GraphicFlyers">
+  <img src="img/1.png" style="cursor:pointer"
+       onclick="showImage(this.src, 'img/1.png');" height = 10% width = 10%/>
+
+  <div id="largeImgPanel" onclick="this.style.display='none'">
+      <img id="largeImg"
+           style="height:100%; margin:0; padding:0;" />
+  </div>
+</div>
 </body>
 </html>

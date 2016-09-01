@@ -94,29 +94,23 @@ a.navLink:visited{
   padding: 36px;
 }
 /******************RESUME******************/
+
+/*Reference: http://jsfiddle.net/cherryflavourpez/AqvVJ/ */
 #ManilaFolders{
   padding: 30px;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background-color: green;
+  width: 200px;
 }
 
-#firstManila{
-  background-color: red;
+#InnerBox{
+  width: 400em;
+}
+/*height was 774*/
+.ManilaStyle{
   margin-top: 100px;
-  height: 774px;
-  width: 50%;
-  float: right;
+  float: left;
+  margin-right: 1000px;
+}
 
-}
-#secondManila{
-  background-color: blue;
-  margin-top: 100px;
-  height: 774px;
-  width: 50%;
-  float:left;
-}
 .btn{
   margin-top: 10px;
   margin-left: 60px;
@@ -132,7 +126,58 @@ a.navLink:visited{
 .btn:hover {
     background-color: #e9c886;
 }
-#btnControl:checked ~ #MFront {
+
+.ParaStyle{
+  font-size: 30px;
+  visibility: hidden;
+  margin-left: 40px;
+  margin-top: 40px;
+  line-height: 25px;
+  color: #0885ae;
+}
+.ParaStyle i{
+  font-size: 20px;
+  color: #fb5555;
+}
+.Project_Description{
+  font-size: 18px;
+  margin-left: 40px;
+  margin-right: 20px;
+  line-height: 18px;
+  visibility: hidden;
+}
+.Invisible{
+  visibility: hidden;
+}
+.TableStyle{
+  visibility: hidden;
+  margin-left: 30px;
+}
+.TableStyle li{
+  font-size: 20px;
+}
+ #Page3 h3{
+   margin-left: 40px;
+ }
+#Page3 li{
+  display: inline;
+  font-size: 19px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.ProjectIcons{
+  width: 35px;
+  height: 35px;
+  visibility: hidden;
+  margin-left: 40px;
+}
+
+.ProjectLink:hover{
+  text-decoration: none;
+}
+/******Animation for Education******/
+#btnControl:checked ~ #Front1 {
   -webkit-transform: rotateX(-180deg);
 	-moz-transform: rotateX(-180deg);
 	transform: rotateX(-180deg);
@@ -141,11 +186,88 @@ a.navLink:visited{
   transform-origin: 0% 100%;
   z-index: 2;
 }
-#btnControl:checked ~ .MPage{
+#btnControl:checked ~ #Page1{
   z-index: 3;
   height: 900px;
 }
-#MFront{
+#btnControl:checked ~ #Page1 p{
+  visibility: visible;
+}
+/******Animation for Work EXP******/
+#btnControl2:checked ~ #Front2 {
+  -webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  z-index: 2;
+}
+#btnControl2:checked ~ #Page2{
+  z-index: 3;
+  height: 1050px;
+}
+#btnControl2:checked ~ #Page2 p{
+  visibility: visible;
+}
+#btnControl2:checked ~ #Page2 ul{
+  visibility: visible;
+}
+/******Animation for Projects******/
+#btnControl3:checked ~ #Front3 {
+  -webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  z-index: 2;
+}
+#btnControl3:checked ~ #Page3{
+  z-index: 3;
+  height: 900px;
+}
+#btnControl3:checked ~ #Page3 p{
+  visibility: visible;
+}
+#btnControl3:checked ~ #Page3 p{
+  visibility: visible;
+}
+#btnControl3:checked ~ #Page3 ul{
+  visibility: visible;
+}
+#btnControl3:checked ~ #Page3 h3{
+  visibility: visible;
+}
+#btnControl3:checked ~ #Page3 .ProjectIcons{
+  visibility: visible;
+}
+/******Animation for SKILLS******/
+#btnControl4:checked ~ #Front4 {
+  -webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+  -webkit-transform-origin: 0% 100%;
+  -moz-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  z-index: 2;
+}
+#btnControl4:checked ~ #Page4{
+  z-index: 3;
+  height: 900px;
+}
+#btnControl4:checked ~ #Page4 p{
+  visibility: visible;
+}
+#btnControl4:checked ~ #Page4 ul{
+  visibility: visible;
+}
+/******End Animation Styling ******/
+.btnStyle{
+  display: none;
+}
+
+.MFront{
   position: absolute;
   z-index: 3;
   -webkit-transition: all 1s ease;
@@ -159,21 +281,17 @@ a.navLink:visited{
   margin: auto;
   margin-top: 58px;
   margin-left: 40px;
-  width: 852px;
+  width: 870px;
   height: 100px;
   background-color: white;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
 }
-#MBack{
+.MBack{
   position: absolute;
   z-index: 1;
 }
-#btnControl{
-  display: none;
-}
-
 
 /******************Dropdown******************/
 #header ul li:hover ul{
@@ -198,7 +316,23 @@ a.navLink:visited{
 }
 #header ul ul li a:hover{
   background-color: #c4c4c4;
+}
+#header ul ul li a:visited{
+  color: #313131;
+  text-decoration: none;
+}
 
+/******************Portfolio******************/
+#GraphicFlyers{
+  margin-top: 200px;
+}
+#largeImgPanel {
+    text-align: center;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(100,100,100, 0.5);
 }
 /******************Contact Page******************/
 
