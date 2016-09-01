@@ -105,7 +105,7 @@ a.navLink:visited{
 #firstManila{
   background-color: red;
   margin-top: 100px;
-  height: 770px;
+  height: 774px;
   width: 50%;
   float: right;
 
@@ -113,7 +113,7 @@ a.navLink:visited{
 #secondManila{
   background-color: blue;
   margin-top: 100px;
-  height: 300px;
+  height: 774px;
   width: 50%;
   float:left;
 }
