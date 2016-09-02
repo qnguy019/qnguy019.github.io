@@ -93,6 +93,19 @@ a.navLink:visited{
   text-align: center;
   padding: 36px;
 }
+.SkillLinks:hover{
+  zoom: 1.2;
+  -moz-transform: scale(1.2);
+
+}
+.SkillLinks:visited{
+  text-decoration: none;
+  color: #313131;
+}
+.SkillLinks:link{
+  text-decoration: none;
+  color: #313131;
+}
 /******************RESUME******************/
 
 /*Reference: http://jsfiddle.net/cherryflavourpez/AqvVJ/ */
@@ -397,4 +410,18 @@ form textarea{
   width: auto;
   overflow: hidden;
   z-index: 2;
+}
+
+/******************Footer******************/
+footer{
+  width: 100%;
+  background-color: white;
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+}
+#footerText{
+  font-family: Roboto Condensed, Arial, sans-serif;
+  margin-left: 10px;
+
 }
