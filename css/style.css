@@ -106,6 +106,20 @@ a.navLink:visited{
   text-decoration: none;
   color: #313131;
 }
+/******************About******************/
+#AboutMeInfo{
+  margin-top: 80px;
+}
+#AboutMeInfo img{
+  float: left;
+  padding: 0 10px 0px 0px;
+}
+#AboutMeInfo h2{
+  font-family: Roboto Condensed, Arial, sans-serif;
+}
+#AboutMeInfo div p{
+  padding-left: 10px;
+}
 /******************RESUME******************/
 
 /*Reference: http://jsfiddle.net/cherryflavourpez/AqvVJ/ */
@@ -384,13 +398,13 @@ form input{
   margin-left: 50px;
   background-color: #555555;
   color: white;
-  width: 384px;
+  width: 320px;
   height: 50px;
 }
 form textarea{
   margin-left: 20px;
   background-color: #555555;
-  width: 384px;
+  width: 320px;
   color: white;
 }
 #submitButton{
@@ -411,7 +425,23 @@ form textarea{
   overflow: hidden;
   z-index: 2;
 }
+#SocialMedia{
+  right: 0;
+  position: fixed;
+}
+#SocialMedia li{
+  display: inline;
+  list-style-type: none;
+  margin-right: -20px;
+}
+#SocialMedia li:nth-child(4){
+  margin-right: 20px;
+}
 
+.SocialMediaLink:hover{
+  zoom: 1.2;
+  -moz-transform: scale(1.2);
+}
 /******************Footer******************/
 footer{
   width: 100%;
@@ -419,6 +449,7 @@ footer{
   height: 20px;
   position: fixed;
   bottom: 0;
+  z-index: 600;
 }
 #footerText{
   font-family: Roboto Condensed, Arial, sans-serif;
