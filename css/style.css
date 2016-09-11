@@ -49,6 +49,13 @@ html{
   padding: 17px;
 }
 
+a{
+  -webkit-transition: background 0.3s linear;
+  -moz-transition: background 0.3s linear;
+  -ms-transition: background 0.3s linear;
+  -o-transition: background 0.3s linear;
+  transition: background 0.3s linear;
+}
 a.navLink:hover{
   background-color: #c4c4c4;
 }
@@ -420,8 +427,7 @@ form textarea{
 #contactPencil{
   margin-left: 118px;
   position: absolute;
-  height: 100%;
-  width: auto;
+  height: 92%;
   overflow: hidden;
   z-index: 2;
 }
@@ -434,7 +440,7 @@ form textarea{
   list-style-type: none;
   margin-right: -20px;
 }
-#SocialMedia li:nth-child(4){
+#SocialMedia li:nth-child(5){
   margin-right: 20px;
 }
 
@@ -442,6 +448,16 @@ form textarea{
   zoom: 1.2;
   -moz-transform: scale(1.2);
 }
+#Email{
+  clear:both;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 20px;
+}
+#Email p{
+  font-size: 15px;
+}
+
 /******************Footer******************/
 footer{
   width: 100%;
