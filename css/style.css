@@ -130,6 +130,28 @@ a.navLink:visited{
 /******************RESUME******************/
 
 /*Reference: http://jsfiddle.net/cherryflavourpez/AqvVJ/ */
+#ResumeDownload{
+  margin-top: 80px;
+  margin-left: 60px;
+}
+#ResumeDownload p {
+  font-family: Roboto Condensed, Arial, sans-serif;
+  font-size: 20px;
+}
+#ResumeDownload a:hover{
+  color: black;
+}
+
+#ResumeDownload a:link{
+  text-decoration: none;
+  color: blue;
+}
+
+#ResumeDownload a:visited{
+  text-decoration: none;
+  color: blue;
+}
+
 #ManilaFolders{
   padding: 30px;
   width: 200px;
@@ -140,7 +162,7 @@ a.navLink:visited{
 }
 /*height was 774*/
 .ManilaStyle{
-  margin-top: 100px;
+  margin-top: 10px;
   float: left;
   margin-right: 1000px;
   zoom: 0.8;
