@@ -283,7 +283,7 @@ a.navLink:visited{
 }
 #btnControl3:checked ~ #Page3{
   z-index: 3;
-  height: 900px;
+  height: 1200px;
 }
 #btnControl3:checked ~ #Page3 p{
   visibility: visible;
